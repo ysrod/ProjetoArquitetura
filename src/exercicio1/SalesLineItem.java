@@ -3,6 +3,7 @@ package exercicio1;
 public class SalesLineItem {
     private int quantity;
     private double subtotal;
+    private int itemID;
     private ProductDescription product;
 
     public SalesLineItem() {
@@ -19,5 +20,13 @@ public class SalesLineItem {
 
     public double getSubtotal(){
         return quantity * product.getPrice();
+    }
+
+    public ProductDescription getProduct() {
+        return product;
+    }
+
+    public void setProduct(ProductDescription product) {
+        this.product = product;
     }
 }
